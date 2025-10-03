@@ -33,4 +33,16 @@ public class Combatant{
     public void setVida(int vida){
         this.vida = vida;
     }
+    public String obtenerObjetos(){
+        return "";
+    }
+    public Item obtenerObjeto(int pos){
+        return new Item("", 0, 0, 0, 0, 0);
+    }
+    public Attack obtenerAtaque(int pos){
+        return new Attack("", 0, 0, 0);
+    }
+    public Ability obtenerHabilidad(){
+        return new Ability("", 0, 0, 0);
+    }
 }

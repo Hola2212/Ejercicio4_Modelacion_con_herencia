@@ -4,4 +4,12 @@ public class GoblinBoss extends Combatant{
     public GoblinBoss(String nombre){
         super(nombre, 450, 200, 500);
     }
+    @Override
+    public Attack obtenerAtaque(int pos){
+        return this.ataqueEspecifico;
+    }
+    @Override
+    public Ability obtenerHabilidad(){
+        return this.habilidad;
+    }
 }

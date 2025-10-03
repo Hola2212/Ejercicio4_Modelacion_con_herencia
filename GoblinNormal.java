@@ -4,4 +4,12 @@ public class GoblinNormal extends Combatant{
     public GoblinNormal(String nombre){
         super(nombre, 300, 200, 250);
     }
+    @Override
+    public Attack obtenerAtaque(int pos){
+        return this.ataqueEspecifico;
+    }
+    @Override
+    public Ability obtenerHabilidad(){
+        return this.habilidad;
+    }
 }

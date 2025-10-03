@@ -13,7 +13,15 @@ public class Bag{
         disponible = disponible + mod;
     }
     public Item getObjeto(int pos){
-        return objetos.get(pos);
+        Item objeto = objetos.get(pos);
+        objetos.remove(pos);
+        return objeto;
+    }
+    public void anadirObjeto(Item objeto){
+        objetos.add(objeto);
+    }
+    public int obtenerCantObjetos(){
+        return objetos.size();
     }
     public int getEspacio(){
         return espacio;

@@ -9,11 +9,14 @@ public class Shop {
         objetos[5] = new Item("Revivir", 0, 0, 200, 1, 10);
     }
 
+    public Item getObjeto(int index){
+        return objetos[index];
+    }
     @Override
     public String toString(){
         String res = "";
         for (int i = 0; i < 6; i++) {
-            res = res + i + objetos[0].toString();
+            res = res + i + objetos[0].toString() + "\n";
         }
         return res;
     }

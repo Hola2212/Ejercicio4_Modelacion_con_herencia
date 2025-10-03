@@ -4,4 +4,12 @@ public class SkeletonBoss extends Combatant{
     public SkeletonBoss(String nombre){
         super(nombre, 180, 300, 700);
     }
+    @Override
+    public Attack obtenerAtaque(int pos){
+        return this.ataqueEspecifico;
+    }
+    @Override
+    public Ability obtenerHabilidad(){
+        return this.habilidad;
+    }
 }
